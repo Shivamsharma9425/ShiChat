@@ -1,0 +1,121 @@
+.chatPage {
+  background-color: rgb(29, 29, 29);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatContainer {
+  width: 100%;
+  /* height: 60%; */
+height: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(35, 197, 35);
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box-shadow: 0px 12px 5px #555; */
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.header a {
+  text-decoration: none;
+  margin: 20px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  background-color: white;
+  color: #444;
+  font-weight: 900;
+  font-style: normal;
+  border: 2px solid black;
+  padding: 5px 8px;
+  transition: all 0.5s;
+}
+.header a:hover{
+    scale: 1.1;
+}
+
+
+.chatBox {
+  width: 100%;
+  background-color: white;
+  height: 80%;
+  /* border: 2px solid black; */
+  /* overflow-y: auto; */
+}
+
+.inputBox {
+  width: 100%;
+  /* background-color: rgb(35, 197, 35); */
+  height: 10%;
+  border-top: 1px solid black;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 8px;
+}
+
+#chatInput {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sendBtn {
+  background-color: rgb(20, 164, 20);
+  width: 20%;
+  height: 90%;
+  border: none;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.sendBtn:hover {
+  background-color: rgb(35,197,35);
+  scale: 1.02;
+}
+
+@media screen and (max-width: 520px){
+    .header h2{
+        font-size: 1.2rem;
+    }
+    .header{
+        height: 10%;
+    }
+    .chatBox{
+        height: 80%;
+    }
+    
+
+    .inputBox{
+        height: 10%;
+        /* width: 70%; */
+    }
+    .sendBtn{
+        font-size: 1rem;
+    }
+}
+
